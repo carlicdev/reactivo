@@ -1,9 +1,8 @@
 "use client"
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 import SectionHero from '../components/SectionHero'
 import SupportSection from '../components/SupportSection'
-import IdeaCard from '../components/IdeaCard'
 import Modal from '../components/Modal'
 import TicketForm from '../components/TicketForm'
 import TicketStatus from '../components/TicketStatus'

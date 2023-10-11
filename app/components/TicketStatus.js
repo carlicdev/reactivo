@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { AiOutlineReload } from 'react-icons/ai'
 
 const TicketStatus = () => {

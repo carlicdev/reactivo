@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from 'react'
+import Image from 'next/image'
 import Modal from './Modal'
 import ProjectDetails from './ProjectDetails'
 
@@ -17,11 +18,13 @@ const ProjectCard = ({project}) => {
           onClick={handleModal}
           className='rounded-lg w-full bg-white shadow cursor-pointer'
         >
-            <img src={project.image} alt='projectImg' className='w-full h-[270px] rounded-t-lg' />
-            <div className='flex flex-col p-5'>
-                <h2 className='text-lg text-gray-900'>{project.title}</h2>
-                <p className='text-gray-600 font-medium'>{project.type}</p>
-            </div>
+          <div className='w-full h-[270px] rounded-t-lg'>
+            <Image src={project.image} alt='projectImg' height={270} width={500} />
+          </div>
+          <div className='flex flex-col p-5'>
+              <h2 className='text-lg text-gray-900'>{project.title}</h2>
+              <p className='text-gray-600 font-medium'>{project.type}</p>
+          </div>
         </div>     
     </div>
   )

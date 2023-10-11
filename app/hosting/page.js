@@ -17,7 +17,7 @@ const HostingPage = () => {
   return (
     <div>
       <Modal isOpen={isOpen} handleModal={handleModal} content={<QuoteForm handleModal={handleModal}/>} />
-      <SectionHero title='Hosting.' subtitle={'Alojamiento para tus aplicaciones.'} image={'./hosting2.svg'}/>
+      <SectionHero title='Hosting.' subtitle={'Alojamiento para tus aplicaciones.'} image={'/hosting2.svg'}/>
       <HostingSection handleModal={handleModal} />
       <ContactSection />
     </div>

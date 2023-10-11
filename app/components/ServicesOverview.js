@@ -1,4 +1,4 @@
-import React from 'react'
+import Image from 'next/image'
 import Heading from './Heading'
 import { FiMoreHorizontal } from 'react-icons/fi'
 import SubHeading from './SubHeading'
@@ -21,7 +21,9 @@ const ServicesOverview = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./componentesPers.jpg'} alt='img' className='w-full z-20' />
+                                <div className='w-full z-20'>
+                                  <Image src={'/componentesPers.jpg'} alt='img' width={600} height={400} />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -37,7 +39,9 @@ const ServicesOverview = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./appsEscalables.jpg'} alt='img' className='w-full z-20' />
+                                <div className='w-full z-20'>
+                                    <Image src={'/appsEscalables.jpg'} alt='Image' width={600} height={400} />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -53,7 +57,7 @@ const ServicesOverview = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./userExperience1.jpg'} alt='img' className='w-full z-20' />
+                                <Image src={'/userExperience1.jpg'} alt='Image' width={600} height={400} />
                             </div>
                         </div>
                     </div>
@@ -69,7 +73,7 @@ const ServicesOverview = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./integracion.jpg'} alt='img' className='w-full z-20 h-[350px]' />
+                                <Image src={'/integracion.jpg'} alt='Image' width={600} height={400} />
                             </div>
                         </div>
                     </div>
@@ -85,7 +89,7 @@ const ServicesOverview = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./security1.jpg'} alt='img' className='w-full z-20' />
+                                <Image src={'/security1.jpg'} alt='Image' width={600} height={400} />
                             </div>
                         </div>
                     </div>
@@ -102,7 +106,7 @@ const ServicesOverview = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./cronografo.jpg'} alt='img' className='w-full z-20' />
+                                <Image src={'/cronografo.jpg'} alt='Image' width={600} height={400} />
                             </div>
                         </div>
                     </div>
@@ -118,7 +122,7 @@ const ServicesOverview = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./mantenimiento1.jpg'} alt='img' className='w-full z-20' />
+                                <Image src={'/mantenimiento1.jpg'} alt='Image' width={600} height={400} />
                             </div>
                         </div>
                     </div>
@@ -134,7 +138,7 @@ const ServicesOverview = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./support2.jpg'} alt='img' className='w-full z-20' />
+                                <Image src={'/support2.jpg'} alt='Image' width={600} height={400} />
                             </div>
                         </div>
                     </div>
@@ -150,7 +154,7 @@ const ServicesOverview = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./desarrolloTransparente.jpg'} alt='img' className='w-full z-20' />
+                                <Image src={'/desarrolloTransparente.jpg'} alt='Image' width={600} height={400} />
                             </div>
                         </div>
                     </div>
@@ -166,7 +170,7 @@ const ServicesOverview = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./excelencia.jpg'} alt='img' className='w-full z-20' />
+                                <Image src={'/excelencia.jpg'} alt='Image' width={600} height={400} />
                             </div>
                         </div>
                     </div>

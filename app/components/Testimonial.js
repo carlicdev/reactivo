@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Heading from "./Heading"
 import { FiMoreHorizontal } from "react-icons/fi"
 
@@ -13,7 +14,9 @@ const Testimonial = () => {
             <div className="w-full lg:w-1/3 p-2 flex flex-col justify-center mb-5 ">
               <div className='max-w-sm bg-slate-800 rounded-lg shadow mx-auto'>
                     <div className='flex text-white gap-2 p-5 items-center rounded-b-3xl'>
-                      <img src={'./influencer1.jpg'} alt='logo' className='rounded-full h-20 w-20 ml-0 mr-2'/>
+                      <div className="rounded-full h-20 w-20 ml-0 mr-2 overflow-hidden">
+                        <Image src={'/influencer1.jpg'} alt='logo' width={300} height={300}/>
+                      </div>
                       <div className="ml-2 mr-auto">
                         <h2 className='font-semibold text-xl'>María López de Nava</h2>
                         <p>Emprendedora</p>
@@ -26,7 +29,9 @@ const Testimonial = () => {
               </div>
               <div className='max-w-sm bg-slate-800 rounded-lg shadow mt-5 mx-auto'>
                     <div className='flex text-white gap-2 p-5 items-center rounded-b-3xl'>
-                      <img src={'./influencer1.jpg'} alt='logo' className='rounded-full h-20 w-20 ml-0 mr-2'/>
+                      <div className="rounded-full h-20 w-20 ml-0 mr-2 overflow-hidden">
+                        <Image src={'/influencer1.jpg'} alt='logo' width={300} height={300}/>
+                      </div>
                       <div className="ml-2 mr-auto">
                         <h2 className='font-semibold text-xl'>Luca Sal</h2>
                         <p>Escritor</p>
@@ -41,7 +46,9 @@ const Testimonial = () => {
             <div className="w-full lg:w-1/3 p-2 flex flex-col justify-center mb-5">
               <div className='max-w-sm bg-slate-800 rounded-lg shadow mx-auto'>
                     <div className='flex text-white gap-2 p-5 items-center rounded-b-3xl'>
-                      <img src={'./influencer1.jpg'} alt='logo' className='rounded-full h-20 w-20 ml-0 mr-2'/>
+                      <div className="rounded-full h-20 w-20 ml-0 mr-2 overflow-hidden">
+                        <Image src={'/influencer1.jpg'} alt='logo' width={300} height={300}/>
+                      </div>
                       <div className="ml-2 mr-auto">
                         <h2 className='font-semibold text-xl'>Luca Sal</h2>
                         <p>Escritor</p>
@@ -55,7 +62,9 @@ const Testimonial = () => {
 
               <div className='max-w-sm bg-slate-800 rounded-lg shadow mt-5 mx-auto'>
                     <div className='flex text-white gap-2 p-5 items-center rounded-b-3xl'>
-                      <img src={'./influencer1.jpg'} alt='logo' className='rounded-full h-20 w-20 ml-0 mr-2'/>
+                      <div className="rounded-full h-20 w-20 ml-0 mr-2 overflow-hidden">
+                        <Image src={'/influencer1.jpg'} alt='logo' width={300} height={300}/>
+                      </div>
                       <div className="ml-2 mr-auto">
                         <h2 className='font-semibold text-xl'>Luca Sal</h2>
                         <p>Escritor</p>
@@ -72,7 +81,9 @@ const Testimonial = () => {
             <div className="w-full lg:w-1/3 p-2 flex flex-col justify-center mb-5">
                 <div className='max-w-sm bg-slate-800 rounded-lg shadow mx-auto'>
                     <div className='flex text-white gap-2 p-5 items-center rounded-b-3xl'>
-                      <img src={'./influencer1.jpg'} alt='logo' className='rounded-full h-20 w-20 ml-0 mr-2'/>
+                      <div className="rounded-full h-20 w-20 ml-0 mr-2 overflow-hidden">
+                        <Image src={'/influencer1.jpg'} alt='logo' width={300} height={300}/>
+                      </div>
                       <div className="ml-2 mr-auto">
                         <h2 className='font-semibold text-xl'>David Fleitman</h2>
                         <p>CEO en BusBus</p>
@@ -85,7 +96,9 @@ const Testimonial = () => {
 
               <div className='max-w-sm bg-slate-800 rounded-lg shadow mt-5 mx-auto'>
                     <div className='flex text-white gap-2 p-5 items-center rounded-b-3xl'>
-                      <img src={'./influencer1.jpg'} alt='logo' className='rounded-full h-20 w-20 ml-0 mr-2'/>
+                      <div className="rounded-full h-20 w-20 ml-0 mr-2 overflow-hidden">
+                        <Image src={'/influencer1.jpg'} alt='logo' width={300} height={300}/>
+                      </div>
                       <div className="ml-2 mr-auto">
                         <h2 className='font-semibold text-xl'>David Fleitman</h2>
                         <p>Escritor</p>
@@ -99,7 +112,9 @@ const Testimonial = () => {
               
               <div className='max-w-sm bg-slate-800 rounded-lg shadow mt-5 mx-auto'>
                     <div className='flex text-white gap-2 p-5 items-center rounded-b-3xl'>
-                      <img src={'./influencer1.jpg'} alt='logo' className='rounded-full h-20 w-20 ml-0 mr-2'/>
+                      <div className="rounded-full h-20 w-20 ml-0 mr-2 overflow-hidden">
+                        <Image src={'/influencer1.jpg'} alt='logo' width={300} height={300}/>
+                      </div>
                       <div className="ml-2 mr-auto">
                         <h2 className='font-semibold text-xl'>David Fleitman</h2>
                         <p>Escritor</p>

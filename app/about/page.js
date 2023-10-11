@@ -6,11 +6,10 @@ import Mission from '../components/Mission'
 import Values from '../components/Values'
 import ContactSection from '../components/ContactSection'
 import PortfolioSection from '../components/PortfolioSection'
-import Contrataciones from '../components/Contrataciones'
 import CTA from '../components/CTA'
 import Modal from '../components/Modal'
 import QuoteForm from '../components/QuoteForm'
-import Testimonial from '../components/Testimonial'
+
 
 const AboutPage = () => {
   const [isOpen, setIsOpen] = useState(false)

@@ -1,4 +1,5 @@
-import React from 'react'
+
+import Image from 'next/image'
 import SubHeading from './SubHeading'
 
 const Mission = () => {
@@ -13,7 +14,7 @@ const Mission = () => {
                 <div className='rounded-lg shadow z-10'>
                     <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                         <div className='rounded-md overflow-hidden'>
-                            <img src={'./appsEscalables.jpg'} alt='img' className='w-full z-20' />
+                            <Image src={'/appsEscalables.jpg'} alt='img' width={600} height={400} />
                         </div>
                     </div>
                 </div>
@@ -29,7 +30,7 @@ const Mission = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./teamwork.jpg'} alt='img' className='w-full z-20' />
+                                <Image src={'/teamwork.jpg'} alt='img' width={600} height={400} />
                             </div>
                         </div>
                     </div>

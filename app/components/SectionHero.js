@@ -1,7 +1,8 @@
-import React from 'react'
+
+import Image from 'next/image'
 import SubHeading from './SubHeading'
 
-const SectionHero = ({title, subtitle, image, imgSize}) => {
+const SectionHero = ({title, subtitle, image}) => {
   return (
     <div className='w-full bg-gray-100'>
         <div className='max-w-7xl w-full mx-auto py-5'>
@@ -11,7 +12,7 @@ const SectionHero = ({title, subtitle, image, imgSize}) => {
                     <SubHeading text={subtitle} />
                 </div>
                 <div className='w-full lg:w-1/2 p-5 flex justify-center'>
-                  <img src={image} alt='heroImg' className={`w-${imgSize}`} />
+                  <Image src={image} alt='heroImg' width={400} height={300} />
                 </div>
             </div>
         </div>

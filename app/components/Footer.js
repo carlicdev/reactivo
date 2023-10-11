@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Logo from './Logo'
 import Link from 'next/link'
 import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare } from 'react-icons/ai'

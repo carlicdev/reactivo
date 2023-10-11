@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { AiOutlineMail, AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare } from 'react-icons/ai'
 import { BsWhatsapp } from 'react-icons/bs'
 import ContactForm from './ContactForm'

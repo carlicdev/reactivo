@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Logo from './Logo'
 
 const CTA = ({text, handleModal}) => {

@@ -1,4 +1,5 @@
-import React from 'react'
+
+import Image from 'next/image'
 import SectionHeader from './SectionHeader'
 import SubHeading from './SubHeading'
 
@@ -19,7 +20,7 @@ const SoftwareForWho = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./empresa1.jpg'} alt='img' className='w-full z-20' />
+                                <Image src={'/empresa1.jpg'} alt='img' width={600} height={400} />
                             </div>
                         </div>
                     </div>
@@ -35,7 +36,7 @@ const SoftwareForWho = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./emprendedores.jpg'} alt='img' className='w-full z-20' />
+                                <Image src={'/emprendedores.jpg'} alt='img' width={600} height={400} />
                             </div>
                         </div>
                     </div>
@@ -51,7 +52,7 @@ const SoftwareForWho = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./pyme.jpg'} alt='img' className='w-full z-20' />
+                                <Image src={'/pyme.jpg'} alt='img' width={600} height={400} />
                             </div>
                         </div>
                     </div>
@@ -67,7 +68,7 @@ const SoftwareForWho = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./corporacion2.jpg'} alt='img' className='w-full z-20 h-[350px]' />
+                                <Image src={'/corporacion2.jpg'} alt='img' width={600} height={400} />
                             </div>
                         </div>
                     </div>
@@ -83,7 +84,7 @@ const SoftwareForWho = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./salud2.jpg'} alt='img' className='w-full z-20' />
+                                <Image src={'/salud2.jpg'} alt='img' width={600} height={400} />
                             </div>
                         </div>
                     </div>
@@ -100,7 +101,7 @@ const SoftwareForWho = () => {
                     <div className='rounded-lg shadow z-10'>
                         <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                             <div className='rounded-md overflow-hidden'>
-                                <img src={'./transformacionDigital.png'} alt='img' className='w-full z-20' />
+                                <Image src={'/transformacionDigital.png'} alt='img' width={600} height={400} />
                             </div>
                         </div>
                     </div>

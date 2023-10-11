@@ -1,6 +1,5 @@
 import Heading from "./Heading"
 import { FiMoreHorizontal } from "react-icons/fi"
-import ProyectCard from "./ProjectCard"
 import PostCard from "./PostCard"
 
 const BlogSection = () => {

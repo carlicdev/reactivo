@@ -22,7 +22,7 @@ const DesarrolloWeb = () => {
   return (
     <main>
       <Modal isOpen={isOpen} handleModal={handleModal} content={<QuoteForm handleModal={handleModal}/>}/>
-      <SectionHero title='Desarrollo Web.' subtitle={'Destaca tu presencia en línea.'} image='./webdev1.svg' imgSize={'[150px]'}/>
+      <SectionHero title='Desarrollo Web.' subtitle={'Destaca tu presencia en línea.'} image='/webdev1.svg'/>
       <DesarrolloWebSection />
       <SectionHeader title='Una amplia baraja de opciones de Desarrollo Web.' subtitle='Contar con una presencia en línea sólida es esencial para el éxito de cualquier negocio o proyecto.'/>
       <PersonalBanner handleModal={handleModal} />

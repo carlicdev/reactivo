@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 
 const ProjectDetails = ({project}) => {
   return (
@@ -21,13 +21,13 @@ const ProjectDetails = ({project}) => {
                 }
             </div>
             <div className='col-span-4 lg:col-span-3 p-4 flex flex-col max-h-[600px] overflow-auto'>
-                <img src={project.image} alt='projectImg' className='w-full' />
+                <Image src={project.image} alt='projectImage' width={700} height={500} />
                 <p className='text-gray-600 text-lg mt-2 text-justify'>{project.subtext}</p>
                 <div className='my-5'>
                   {
                     project.content.map((item, index) => (
-                      <div className='flex flex-col lg:flex-row my-5 items-center'>
-                        <img src={item.contentImg} alt='contentImg' className='w-full lg:w-1/2'/>
+                      <div className='flex flex-col lg:flex-row my-5 items-center' key={index}>
+                        <Image src={item.contentImg} alt='contentImg' width={350} height={220}/>
                         <div className='p-4'>
                           <h2 className='text-gray-900 mb-2'>{item.subtitle}</h2>
                           <p className='text-gray-600 text-justify'>{item.text}</p>

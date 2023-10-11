@@ -1,3 +1,5 @@
+
+import Image from "next/image"
 import { BsFillCheckCircleFill } from "react-icons/bs"
 
 const SoftwareBanner = ({ handleModal }) => {
@@ -10,7 +12,7 @@ const SoftwareBanner = ({ handleModal }) => {
                         <div className='rounded-lg shadow z-10'>
                             <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                                 <div className='rounded-md overflow-hidden'>
-                                    <img src={'./softwarePers2.jpg'} alt='img' className='w-full h-[400px] z-20' />
+                                    <Image src={'/softwarePers2.jpg'} alt='img' width={600} height={400} />
                                 </div>
                             </div>
                         </div>

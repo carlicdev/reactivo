@@ -19,7 +19,7 @@ const ValueCard = ({ id, title, icon, iconColor, subtitle }) => {
           <div className={`bg-slate-800 p-10 rounded-xl hover:scale-105 hover:bg-slate-700 transition-all duration-300 h-full`}>
             <span className={`${iconColor} text-5xl`}>{iconMappings[icon]()}</span>
             <h2 className='text-gray-200 text-xl my-3'>{title}</h2>
-            <p className='text-gray-400 text-md lg:text-lg'>{subtitle}</p>
+            <p className='text-gray-400 text-md lg:text-lg text-justify'>{subtitle}</p>
           </div>
         </div>
       );
@@ -29,7 +29,7 @@ const Values = () => {
 
   return (
     <div className='w-full h-auto mb-[100px]'>
-        <div className='max-w-7xl w-full mx-auto bg-slate-950  rounded-3xl p-20'>
+        <div className='max-w-7xl w-full mx-auto bg-slate-950  rounded-3xl p-2 lg:p-20'>
             <h2 className='text-gray-50 lg:text-center font-black text-4xl md:text-6xl  my-5'>Nuestros Valores.</h2>
             <div className='flex justify-center'>
                 <span className='my-1 tmx-auto text-5xl text-blue-700'><FiMoreHorizontal/></span>

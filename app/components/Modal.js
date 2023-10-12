@@ -19,7 +19,7 @@ const Modal = ({isOpen, handleModal, content}) => {
                         <AiOutlineCloseCircle />
                     </button>
                 </div>
-                <div className='max-w-5xl w-full mx-auto flex p-5'>
+                <div className='max-w-5xl w-full mx-auto flex p-5  overflow-auto'>
                     {content}
                 </div>
             </div>

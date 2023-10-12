@@ -7,8 +7,8 @@ const ContactSection = () => {
   return (
     <div id={'contact'} className='w-full h-auto' style={{ backgroundImage: 'url(./bg2.jpg)'}}>
         <div className='bg-black bg-opacity-50 h-full py-24'>
-            <div className='max-w-7xl mx-auto w-full bg-slate-950 rounded-3xl p-10'>
-                        <h2 className='text-gray-50 lg:text-center font-black text-4xl md:text-6xl  my-5'>¿Tienes alguna pregunta sobre nuestros servicios?</h2>
+            <div className='max-w-7xl mx-auto w-full bg-slate-950 rounded-3xl p-2 lg:p-10'>
+                        <h2 className='text-gray-50 lg:text-center font-black text-4xl md:text-6xl  my-5 px-5'>¿Tienes alguna pregunta sobre nuestros servicios?</h2>
                 <div className='flex flex-wrap'>
                     <div className='w-full lg:w-1/2  flex justify-center'>
                         <div className='flex flex-col justify-around items-center '>
@@ -41,7 +41,7 @@ const ContactSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-full lg:w-1/2 py-5 pr-5'>
+                    <div className='w-full lg:w-1/2 py-5 lg:pr-5'>
                         <div className='rounded-xl bg-slate-800 p-5'>
                             <ContactForm />
                         </div>

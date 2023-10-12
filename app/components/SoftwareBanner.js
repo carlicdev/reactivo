@@ -6,9 +6,9 @@ const SoftwareBanner = ({ handleModal }) => {
   return (
     <div id={'software-banner'} className='w-full h-auto my-[50px]' >
         <div className=' h-full py-20'>
-            <div className='max-w-7xl w-full mx-auto bg-slate-950  rounded-3xl p-20'>
+            <div className='max-w-7xl w-full mx-auto bg-slate-950  rounded-3xl p-5 lg:p-20'>
                 <div className='flex flex-wrap'>
-                    <div className='relative flex w-full lg:w-1/2 mb-5 lg:mb-0'>
+                    <div className='relative flex w-full lg:w-1/2 mt-5 lg:mt-0 mb-5 lg:mb-0'>
                         <div className='rounded-lg shadow z-10'>
                             <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                                 <div className='rounded-md overflow-hidden'>

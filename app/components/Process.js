@@ -35,7 +35,7 @@ const Process = () => {
 
   return (
     <div className='w-full h-auto'>
-        <div className='max-w-7xl w-full mx-auto bg-slate-950  rounded-3xl p-20'>
+        <div className='max-w-7xl w-full mx-auto bg-slate-950  rounded-3xl lg:p-20 p-2'>
             <h2 className='text-gray-50 lg:text-center font-black text-4xl md:text-6xl  my-5'>Una experiencia de desarrollo diferente.</h2>
             <div className='flex justify-center'>
                 <span className='my-1 tmx-auto text-5xl text-blue-700'><FiMoreHorizontal/></span>

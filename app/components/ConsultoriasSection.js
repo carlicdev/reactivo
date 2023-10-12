@@ -3,7 +3,7 @@ import { FiMoreHorizontal } from "react-icons/fi"
 
 const ConsultoriasSection = ({ handleModal }) => {
   return (
-    <div className='max-w-7xl w-full mx-auto my-[50px]'>
+    <div className='max-w-7xl w-full mx-auto my-[50px] p-5 lg:p-0'>
       <div className='w-full'>
       <Heading text='¿En qué consiste nuestro servicio de Consultorías?' />
         <div className="max-w-5xl w-full mx-auto ">

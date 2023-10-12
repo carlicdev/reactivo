@@ -5,11 +5,11 @@ import { BsFillCheckCircleFill } from 'react-icons/bs'
 
 const BusinessBanner = ({ handleModal }) => {
   return (
-    <div id={'business-banner'} className='max-w-7xl w-full mx-auto bg-gray-200  relative rounded-3xl p-20 my-[50px]'>
+    <div id={'business-banner'} className='max-w-7xl w-full mx-auto bg-gray-200  relative rounded-3xl p-5 lg:p-20 my-[50px]'>
         <div className='tag-left absolute top-7 left-0 lg:left-[-10px]  bg-gradient-to-bl from-blue-700 to-blue-800 p-2 shadow'>
             <h2 className='text-gray-50 text-lg'>Desde $34,999</h2>
         </div>
-        <div className='flex flex-wrap mt-10 lg:mt-0'>
+        <div className='flex flex-wrap mt-24 lg:mt-0'>
             <div className='order-2 lg:order-1 w-full lg:w-1/2 lg:pr-10'>
                 <SubHeading text='Paquete'/>
                 <h2 className="text-gray-900 font-black text-4xl md:text-6xl lg:text-7xl mt-2 mb-5">Business</h2>

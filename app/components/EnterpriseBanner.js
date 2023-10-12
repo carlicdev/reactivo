@@ -6,12 +6,12 @@ const EnterpriseBanner = ({ handleModal }) => {
   return (
     <div id={'enterprise-banner'} className='w-full h-auto my-[150px]' style={{ backgroundImage: 'url(./bg2.jpg)'}}>
     <div className='bg-black bg-opacity-50 h-full py-20'>
-        <div className='max-w-7xl w-full mx-auto relative bg-slate-950 rounded-3xl p-20'>
+        <div className='max-w-7xl w-full mx-auto relative bg-slate-950 rounded-3xl p-5 lg:p-20'>
             <div className='tag-right absolute top-7 right-0 lg:right-[-10px]  bg-gradient-to-bl from-blue-700 to-blue-800 p-2 shadow'>
                 <h2 className='text-gray-50 text-lg'>Desde $94,999</h2>
             </div>
             <div className='flex flex-wrap'>
-                <div className='relative flex w-full lg:w-1/2 mb-5 lg;mb-0 mt-10 lg:mt-0'>
+                <div className='relative flex w-full lg:w-1/2 mb-5 mt-24 lg:mt-0'>
                         <div className='rounded-lg shadow z-10'>
                             <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                                 <div className='rounded-md overflow-hidden'>

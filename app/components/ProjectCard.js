@@ -19,7 +19,7 @@ const ProjectCard = ({project}) => {
           className='rounded-lg w-full bg-white shadow cursor-pointer'
         >
           <div className='w-full h-[270px] rounded-t-lg'>
-            <Image src={project.image} alt='projectImg' height={270} width={500} />
+            <Image src={project.image} alt='projectImg' height={300} width={500} className='h-[270px]'/>
           </div>
           <div className='flex flex-col p-5'>
               <h2 className='text-lg text-gray-900'>{project.title}</h2>

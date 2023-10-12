@@ -9,7 +9,7 @@ const Modal = ({isOpen, handleModal, content}) => {
         return (
           <div className='fixed inset-0 flex justify-center items-center z-20'>
             <div className='bg-white rounded-3xl shadow-lg'>
-                <div className='flex w-full  p-5'>
+                <div className='hidden lg:flex w-full  p-5'>
                     <div className='mr-auto ml-0 px-3.5 py-1 rounded-xl bg-gradient-to-br from-blue-800 to-blue-700 text-white -rotate-6'>
                         <h2 className='text-4xl font-bold'>r</h2>
                     </div>
@@ -19,7 +19,12 @@ const Modal = ({isOpen, handleModal, content}) => {
                         <AiOutlineCloseCircle />
                     </button>
                 </div>
-                <div className='max-w-5xl w-full mx-auto flex p-5  overflow-auto'>
+                <div className='relative max-w-5xl w-full mx-auto flex lg:p-5 border border-gray-300 lg:border-none'>
+                    <div 
+                    onClick={handleModal}
+                    className='absolute top-[-10px]  right-[-10px] lg:hidden text-red-400 hover:text-red-500 text-5xl '>
+                        <AiOutlineCloseCircle />
+                    </div>
                     {content}
                 </div>
             </div>

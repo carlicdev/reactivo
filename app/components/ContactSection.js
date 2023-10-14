@@ -26,16 +26,16 @@ const ContactSection = () => {
                                 </div>
                             </div>
                             <div className='flex flex-row gap-3 items-start mt-5'>
-                              <button className='text-6xl ease-in-out duration-300 text-blue-700 hover:scale-110'>
+                              <button aria-label='facebook' className='text-6xl ease-in-out duration-300 text-blue-700 hover:scale-110'>
                                 <AiFillFacebook />
                               </button>
-                              <button className='text-6xl ease-in-out duration-300 text-blue-700 hover:scale-110'>
+                              <button aria-label='instagram' className='text-6xl ease-in-out duration-300 text-blue-700 hover:scale-110'>
                                 <AiFillInstagram />
                               </button>
-                              <button className='text-6xl ease-in-out duration-300 text-blue-700 hover:scale-110'>
+                              <button aria-label='twitter' className='text-6xl ease-in-out duration-300 text-blue-700 hover:scale-110'>
                                 <AiFillTwitterSquare />
                               </button>
-                              <button className='text-6xl ease-in-out duration-300 text-blue-700 hover:scale-110'>
+                              <button aria-label='linkedin' className='text-6xl ease-in-out duration-300 text-blue-700 hover:scale-110'>
                                 <AiFillLinkedin />
                               </button>
                             </div>

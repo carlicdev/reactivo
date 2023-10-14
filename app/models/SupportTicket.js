@@ -27,7 +27,7 @@ const supportTicketSchema = new Schema({
     },
     status: {
         type: String,
-        default: 'abierto'
+        default: 'open'
     },
     createdAt: { 
         type: Date, 
@@ -36,6 +36,9 @@ const supportTicketSchema = new Schema({
     assignedTo: {
         type: String,
         default: null
+    },
+    comments: {
+        type: [String]
     }
 })
 

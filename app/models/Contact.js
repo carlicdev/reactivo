@@ -32,6 +32,9 @@ const contactSchema = new Schema({
     createdAt: {
         type: Date, 
         default: Date.now 
+    },
+    comments: {
+        type: [String]
     }
 })
 

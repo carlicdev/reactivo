@@ -16,6 +16,22 @@ const clientSchema = new Schema({
         type: String,
         required: [true, 'Please provide a phone number']
     },
+    createdAt: {
+        type: Date, 
+        default: Date.now 
+    },
+    clientType: {
+        type: String,
+        default: 'client'
+    },
+    company: {
+        type: String,
+        default: null
+    },
+    position: {
+        type: String,
+        default: null
+    }
 })
 
 const Client = mongoose.models.Client || mongoose.model('Client', clientSchema);

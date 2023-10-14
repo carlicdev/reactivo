@@ -15,7 +15,7 @@ const FAQs = () => {
             {
                 faqs.map((item, index) => (
                     <div key={index} className='relative w-full border rounded-lg bg-white' >
-                        <input id={index} type='checkbox' className='peer absolute top-0 insetx-0 w-full h-full opacity-0 z-10 cursor-pointer'/>
+                        <input aria-label={`faq-${index}`} id={index} type='checkbox' className='peer absolute top-0 insetx-0 w-full h-full opacity-0 z-10 cursor-pointer'/>
                         <div className='px-5 py-2 flex gap-5 items-center group'>
                             <p className='text-gray-600 md:text-lg text-justify'>{item.question}</p>
                             <div className=' mr-0 ml-auto text-3xl text-blue-700 rotate-0 duration-500 group-clicked:rotate-180'>

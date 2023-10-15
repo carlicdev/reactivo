@@ -13,6 +13,13 @@ const TicketStatus = () => {
         ticket: ''
     });
 
+    const statusMapping = {
+        open: 'abierto',
+        assigned: 'trabajando',
+        inRevision: 'en revisión',
+        closed: 'cerrado'
+    }
+
     const handleChange = (e) => {
         const {name, value} = e.target;
         setForm({...form, [name]: value})
@@ -81,19 +88,24 @@ const TicketStatus = () => {
                                 {supportTicket}
                             </span>
                         </h2>
-                        <p className='text-gray-600 mb-2'>Status del Ticket: <span className='font-bold'>{ticketStatus}</span></p>
+                        <p className='text-gray-600 mb-2'>Status del Ticket: <span className='font-bold'>{statusMapping[ticketStatus]}</span></p>
                         {
-                            ticketStatus === 'abierto' && (
+                            ticketStatus === 'open' && (
                                 <p  className='text-gray-600 mb-2'>Tu ticket aun no ha sido asignado a ninguno de nuestros expertos.</p>
                             )
                         }
                         {
-                            ticketStatus === 'asignado' && (
+                            ticketStatus === 'assigned' && (
                                 <p  className='text-gray-600 mb-2'>Nuestros expertos ya estan trabajando en tu solicitud.</p>
                             )
                         }
                         {
-                            ticketStatus === 'cerrado' && (
+                            ticketStatus === 'inRevision' && (
+                                <p  className='text-gray-600 mb-2'>Hemos terminado de trabajar en tu solicitud. Estamos esperando tu aprobación para poder cerrar el ticket.</p>
+                            )
+                        }
+                                                {
+                            ticketStatus === 'closed' && (
                                 <p  className='text-gray-600 mb-2'>Hemos terminado nuestro trabajo. Gracias por elegir a reactivo.</p>
                             )
                         }

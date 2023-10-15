@@ -161,7 +161,7 @@ const QuoteForm = ({handleModal}) => {
             >
                 {buttonText}
             </button>
-            <p className='text-red-500'>*{serverError}</p>
+            <p className='text-red-500'>{serverError}</p>
         </div>
     </form>
   )

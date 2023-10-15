@@ -10,12 +10,12 @@ const projectsDetails = [
             {
                 subtitle: 'Blog',
                 text: 'El componente principal de la plataforma de Luca es un blog para comunicar sus ideas y compartir sus escritos con sus lectores.',
-                contentImg: '/lucaSalBlog.png',
+                contentImg: '/lucaSalPost.png',
             },
             {
-                subtitle: 'Boletín Informativo',
-                text: 'Los usuarios pueden suscribirse al boletín de Luca para enterarse de sus ultimas entradas al blog y de noticias sobre su libro.',
-                contentImg: '/lucaSalBlog.png',
+                subtitle: 'Comentarios y Boletín Informativo',
+                text: 'Los usuarios pueden dejar sus comentarios en cada entrada del blog asi como suscribirse al boletín de Luca para enterarse de sus ultimas entradas al blog y de noticias sobre su libro.',
+                contentImg: '/lucaSalComments.png',
             },
         ]
     },
@@ -53,17 +53,17 @@ const projectsDetails = [
             {
                 subtitle: 'Amplia Gama de Servicios',
                 text: 'Ciemsa Consultores ofrece una gran variedad de servicios de consultoría. Desde asesoría a emprendedores hasta implantación de Modelos de Calidad.',
-                contentImg: '/lucaSalBlog.png',
+                contentImg: '/ciemsaServices.png',
             },
             {
                 subtitle: 'Atículos y Noticias',
                 text: 'En la plataforma se pueden encontrar noticias y artículos relacionados con el mundo de los negocios.',
-                contentImg: '/lucaSalBlog.png',
+                contentImg: '/ciemsaBlog.png',
             },
             {
                 subtitle: 'Catálogo',
-                text: 'Los usuarios pueden encontrar los 9 libros escritos por Jack Fleitman, Directos y fundador de Ciemsa Consultores.',
-                contentImg: '/lucaSalBlog.png',
+                text: 'Los usuarios pueden encontrar los libros escritos por Jack Fleitman, Director y fundador de Ciemsa Consultores.',
+                contentImg: '/catalogoCiemsa.png',
             },
         ]
     },
@@ -106,12 +106,12 @@ const projectsDetails = [
             {
                 subtitle: 'Hero Section',
                 text: 'Un diseño moderno que responde las tres preguntas más importantes: ¿Qué es BusBus? ¿Qué hace? ¿Cómo lo hace?',
-                contentImg: '/lucaSalBlog.png',
+                contentImg: '/busbusHero.png',
             },
             {
                 subtitle: 'Animaciones',
-                text: 'Las animaciones de algunos elementos hacen al sitio web más dinámico y una mejor experiencia de usuario.',
-                contentImg: '/lucaSalBlog.png',
+                text: 'Las animaciones de algunos elementos hacen al sitio web más dinámico y mejoran la experiencia del usuario.',
+                contentImg: '/busbusServices.png',
             },
         ]
     },

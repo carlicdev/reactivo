@@ -136,7 +136,7 @@ const ContactForm = () => {
         <button className='flex gap-2 items-center hover:scale-105 trasition-all duration-300 bg-blue-700 px-6 py-3 text-lg font-bold rounded text-slate-50 shadow-lg'>
           {buttonText}
         </button>
-        <p className='text-red-400'>*{serverError}</p>
+        <p className='text-red-400'>{serverError}</p>
       </div>
     </form>
   )

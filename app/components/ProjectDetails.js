@@ -4,7 +4,7 @@ const ProjectDetails = ({project}) => {
   return (
     <div className='max-w-7xl w-full mx-center'>
         <div className='grid grid-cols-4'>
-            <div className='col-span-4 lg:col-span-1 flex flex-col justify-center items-center'>
+            <div className='col-span-4 lg:col-span-1 flex flex-col justify-center items-center my-5 lg:my-0'>
                 <h2 className='text-gray-900 mb-2'>{project.title}</h2>
                 <p className='text-gray-600 mb-5'>{project.type}</p>
                 {

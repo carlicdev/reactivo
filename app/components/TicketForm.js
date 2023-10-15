@@ -168,7 +168,7 @@ const TicketForm = ({ handleModal }) => {
             {
                 serverError && (
                     <div>
-                        <p className='text-red-500'>*{serverError}</p>
+                        <p className='text-red-500'>{serverError}</p>
                     </div>
                 )
             }

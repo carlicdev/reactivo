@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <main>
-      <Modal isOpen={isOpen} handleModal={handleModal} content={<QuoteForm />} />
+      <Modal isOpen={isOpen} handleModal={handleModal} content={<QuoteForm  handleModal={handleModal}/>} />
       <Hero handleModal={handleModal}/>
       <Process />
       <ServicesOverview />

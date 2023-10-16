@@ -7,6 +7,7 @@ import Logo from './Logo'
 
 const ContactForm = () => {
   const formRef = useRef()
+  const [isValid, setIsValid] = useState(true)
   const [sending, setSending] = useState(false)
   const [serverError, setServerError] = useState(null)
   const [serverMsg, setServerMsg] = useState(null)
@@ -18,10 +19,19 @@ const ContactForm = () => {
       message: ''
   });
 
+  // Función para verificar el formato del correo electrónico
+  function isValidEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+  }
+
   const handleChange = (e) => {
     setServerError(null)    
     const { name, value } = e.target;
     setForm({...form, [name]: value})
+    if (name === 'email') {
+      setIsValid(isValidEmail(value))
+    }
   }
 
   const handleSubmit = async (e) => {
@@ -44,7 +54,16 @@ const ContactForm = () => {
           const data = await response.json();
           if (data) setSending(false)
           if (data.status === 400) setServerError(data.message)
-          if (data.status === 200) setServerMsg(data.message)
+          if (data.status === 200) { 
+            setServerMsg(data.message)
+            setForm({
+              name: '',
+              lastname: '',
+              email: '',
+              phone: '',
+              message: ''
+          })
+          }
       } catch (err) {
         setSending(false)
         setServerError(err.message)
@@ -53,6 +72,11 @@ const ContactForm = () => {
   }
 
   const buttonText = sending ?  <span className='flex items-center gap-2'><AiOutlineReload className='animate-spin'/>Enviando</span> : <span className='flex items-center gap-2'><VscSend/>Enviar</span>
+
+    //mensaje de error si el correo no es válido
+    const errorMessage = !isValid ? (
+      <p className="mb-1 text-center text-xs text-red-500">*Ingresa un correo electrónico válido.</p>
+    ) : null;
 
   if (serverMsg) {
     return (
@@ -102,7 +126,10 @@ const ContactForm = () => {
           />
         </label>
         <label className='w-full lg:w-1/2 px-1 mb-2'>
-          <span className='text-lg text-gray-300 '>Email</span>
+            <div className='flex gap-2 items-end justify-start'>
+                <p className='text-gray-300 text-lg'>Email</p>
+                <span className='lg:hidden'>{errorMessage}</span>
+            </div>
           <input 
             type='email'
             name='email'
@@ -110,6 +137,7 @@ const ContactForm = () => {
             onChange={handleChange}
             className='w-full px-1 py-2 mt-1 border rounded-lg outline-none focus:outline-blue-700' 
           />
+          <span className='mt-1 hidden lg:block'>{errorMessage}</span>
         </label>
         <label className='w-full lg:w-1/2 px-1 mb-2'>
           <span className='text-lg text-gray-300 '>Teléfono</span>
@@ -133,7 +161,10 @@ const ContactForm = () => {
         </label>
       </div>
       <div className='flex items-center mt-5 gap-5'>
-        <button className='flex gap-2 items-center hover:scale-105 trasition-all duration-300 bg-blue-700 px-6 py-3 text-lg font-bold rounded text-slate-50 shadow-lg'>
+        <button 
+          type='submit'
+          disabled={!isValid}
+          className='flex gap-2 items-center hover:scale-105 trasition-all duration-300 bg-blue-700 px-6 py-3 text-lg font-bold rounded text-slate-50 shadow-lg'>
           {buttonText}
         </button>
         <p className='text-red-400'>{serverError}</p>

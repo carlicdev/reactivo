@@ -6,6 +6,7 @@ import Logo from './Logo'
 
 const QuoteForm = ({handleModal}) => {
     const formRef = useRef()
+    const [isValid, setIsValid] = useState(true)
     const [sending, setSending] = useState(false)
     const [serverError, setServerError] = useState(null)
     const [serverMsg, setServerMsg] = useState(null)
@@ -18,10 +19,20 @@ const QuoteForm = ({handleModal}) => {
         message: ''
     });
 
+    
+    // Función para verificar el formato del correo electrónico
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+
     const handleChange = (e) => {
         setServerError(null)
         const { name, value } = e.target;
         setForm({...form, [name]: value})
+        if (name === 'email') {
+            setIsValid(isValidEmail(value))
+        }
     }
 
     const handleSubmit = async (e) => {
@@ -56,6 +67,10 @@ const QuoteForm = ({handleModal}) => {
 
     const buttonText = sending ?  <span className='flex items-center gap-2'><AiOutlineReload className='animate-spin'/>Enviando</span> : <span>Solicitar Cotización</span>
 
+    //mensaje de error si el correo no es válido
+    const errorMessage = !isValid ? (
+      <p className="mb-1 text-center text-xs text-red-500">*Ingresa un correo electrónico válido.</p>
+    ) : null;
 
     if (serverMsg) {
         return (
@@ -124,7 +139,10 @@ const QuoteForm = ({handleModal}) => {
             </select>
         </label>
         <label className='w-full lg:w-1/3 flex flex-col lg:pr-2 mb-2'>
-            <p className='text-gray-600 text-lg font-medium'>Email</p>
+            <div className='flex gap-2 items-end justify-start'>
+                <p className='text-gray-600 text-lg font-medium'>Email</p>
+                <span>{errorMessage}</span>
+            </div>
             <input 
                 type='email'
                 name='email'
@@ -132,6 +150,7 @@ const QuoteForm = ({handleModal}) => {
                 onChange={handleChange}
                 className='w-full px-1 py-2 rounded-lg outline-none focus:outline-blue-700 border'
             />
+             
         </label>
         <label className='w-full lg:w-1/3 flex flex-col lg:pl-2 mb-2'>
             <p className='text-gray-600 text-lg font-medium'>Teléfono</p>
@@ -156,6 +175,7 @@ const QuoteForm = ({handleModal}) => {
         </label>
         <div className='mt-5 flex items-center gap-5'>
             <button 
+                disabled={!isValid}
                 type='submit'
                 className='border border-blue-700 text-blue-700 font-bold px-5 py-3 rounded-lg hover:bg-blue-700 hover:text-gray-50'
             >

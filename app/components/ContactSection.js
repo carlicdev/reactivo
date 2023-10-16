@@ -16,13 +16,13 @@ const ContactSection = () => {
                             <div className='flex flex-col gap-4 px-20 lg:px-32'>
 
                                 <div className='flex gap-2 items-center justify-center border border-blue-700 p-2 rounded-lg'>
-                                    <span className='text-2xl text-blue-700'><AiOutlineMail /></span>
-                                    <p className='text-xl text-blue-700'>soporte@reactivo.mx</p>
+                                    <span className='text-2xl text-blue-500'><AiOutlineMail /></span>
+                                    <p className='text-xl text-blue-500'>soporte@reactivo.mx</p>
                                 </div>
 
                                 <div className='flex gap-2 items-center justify-center border border-blue-700 p-2 rounded-lg'>
-                                    <span className='text-2xl text-blue-700'><BsWhatsapp /></span>
-                                    <p className='text-xl text-blue-700'>{`(52) 713-159-5384`}</p>
+                                    <span className='text-2xl text-blue-500'><BsWhatsapp /></span>
+                                    <p className='text-xl text-blue-500'>{`(52) 713-159-5384`}</p>
                                 </div>
                             </div>
                             <div className='flex flex-row gap-3 items-start mt-5'>

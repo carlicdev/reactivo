@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import ScrollUp from './components/ScrollUp'
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       <body >
         <Navbar />
         {children}
+        <Analytics />
         <ScrollUp />
         <Footer />
       </body>

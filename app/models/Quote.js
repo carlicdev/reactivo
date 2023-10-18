@@ -37,9 +37,22 @@ const quoteSchema = new Schema({
         type: Date, 
         default: Date.now 
     },
-    comments: {
-        type: [String]
-    }
+    assignedAt:{
+        type: Date,
+        default: null
+    },
+    sentAt:{
+        type: Date,
+        default: null
+    },
+    acceptedAt: {
+        type: Date,
+        default: null
+    },
+    closedAt: {
+        type: Date,
+        default: null
+    },
 })
 
 const Quote = mongoose.models.Quote || mongoose.model('Quote', quoteSchema);

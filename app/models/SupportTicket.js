@@ -33,13 +33,22 @@ const supportTicketSchema = new Schema({
         type: Date, 
         default: Date.now 
     },
+    assignedAt:{
+        type: Date,
+        default: null
+    },
+    sentAt:{
+        type: Date,
+        default: null
+    },
+    closedAt: {
+        type: Date,
+        default: null
+    },
     assignedTo: {
         type: String,
         default: null
     },
-    comments: {
-        type: [String]
-    }
 })
 
 const SupportTicket = mongoose.models.SupportTicket || mongoose.model('SupportTicket', supportTicketSchema);

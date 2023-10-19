@@ -96,7 +96,7 @@ const Navbar = () => {
 
       {/* Mobile */}
 
-      <div className={`animated-box ${isOpen ? 'open' : 'closed'} lg:hidden bg-slate-100 bg-opacity-90 absolute top-0 w-full z-20`}>
+      <div className={`animated-box ${isOpen ? 'open' : 'closed'} lg:hidden bg-slate-100 absolute top-0 w-full z-20`}>
                     <div className='relative w-full'>
                         <button 
                             className='absolute top-4 right-4 text-blue-700 text-4xl'
@@ -105,8 +105,8 @@ const Navbar = () => {
                         <AiOutlineCloseCircle />
                         </button>
                     </div>
-                    <div className='flex flex-col h-full justify-center content-center '>
-                        <div className='container max-w-xs justify-text mx-auto'>
+                    <div className='flex flex-col h-full content-center px-5'>
+                        <div className='container max-w-xs justify-text mx-auto mt-5'>
                         <h2 className='font-bold  text-slate-900 text-4xl mt-10 mb-5 mx-auto'>Servicios</h2>
                             <Link href='/desarrollo-web' onClick={() => setIsOpen(!isOpen)} >
                                 <p className='font-semibold hover:text-slate-500 text-slate-600 text-2xl mb-5 mx-auto'>Desarrollo Web</p>

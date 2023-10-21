@@ -67,35 +67,35 @@ const projectsDetails = [
             },
         ]
     },
-    {
-        id: 4, 
-        image: '/dashboardReactivo.png',
-        title: 'Amazon Dropshipping Business', 
-        type: 'Software de Administración de Negocios.',
-        subtext: 'Un software que permite dar seguimiento a los productos que el usuario tiene anunciados en Amazon.',
-        content: [
-            {
-                subtitle: 'Inventario',
-                text: 'El software permite mantener al día el inventario de la tienda del usuario en Amazon.',
-                contentImg: '/lucaSalBlog.png',
-            },
-            {
-                subtitle: 'Automatización',
-                text: 'Todo negocio en crecimiento puede beneficiarse de un software personalizado que permita automatizar tareas y aumentar la productividad.',
-                contentImg: '/lucaSalBlog.png',
-            },
-            {
-                subtitle: 'Contabilidad',
-                text: 'El software permite llevar la contabilidad del negocio de manera sencilla e intuitiva.',
-                contentImg: '/lucaSalBlog.png',
-            },
-            {
-                subtitle: 'Gráficas',
-                text: 'Las gráficas facilitan la visualización de los datos más relevantes del negocio.',
-                contentImg: '/lucaSalBlog.png',
-            },
-        ]
-    },
+    // {
+    //     id: 4, 
+    //     image: '/dashboardReactivo.png',
+    //     title: 'Amazon Dropshipping Business', 
+    //     type: 'Software de Administración de Negocios.',
+    //     subtext: 'Un software que permite dar seguimiento a los productos que el usuario tiene anunciados en Amazon.',
+    //     content: [
+    //         {
+    //             subtitle: 'Inventario',
+    //             text: 'El software permite mantener al día el inventario de la tienda del usuario en Amazon.',
+    //             contentImg: '/lucaSalBlog.png',
+    //         },
+    //         {
+    //             subtitle: 'Automatización',
+    //             text: 'Todo negocio en crecimiento puede beneficiarse de un software personalizado que permita automatizar tareas y aumentar la productividad.',
+    //             contentImg: '/lucaSalBlog.png',
+    //         },
+    //         {
+    //             subtitle: 'Contabilidad',
+    //             text: 'El software permite llevar la contabilidad del negocio de manera sencilla e intuitiva.',
+    //             contentImg: '/lucaSalBlog.png',
+    //         },
+    //         {
+    //             subtitle: 'Gráficas',
+    //             text: 'Las gráficas facilitan la visualización de los datos más relevantes del negocio.',
+    //             contentImg: '/lucaSalBlog.png',
+    //         },
+    //     ]
+    // },
     {
         id: 5, 
         image: '/busbusHero.png',

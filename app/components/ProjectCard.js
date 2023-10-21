@@ -12,18 +12,18 @@ const ProjectCard = ({project}) => {
     setIsOpen(prev => !prev)
   }
   return (
-    <div className="w-full md:w-1/2 lg:w-1/3 p-2">
+    <div className="w-full md:w-1/2 mb-10 md:mb-0 md:p-4 ">
       <Modal isOpen={isOpen} handleModal={handleModal} content={<ProjectDetails project={project}/>}/>
         <div 
           onClick={handleModal}
-          className='rounded-lg w-full bg-white shadow cursor-pointer'
+          className='rounded-lg w-full bg-white shadow-xl cursor-pointer'
         >
-          <div className='w-full h-[270px] rounded-t-lg'>
-            <Image src={project.image} alt='projectImg' height={300} width={500} className='h-[270px]'/>
+          <div className='w-full h-[300px] rounded-t-lg'>
+            <Image src={project.image} alt='projectImg' height={300} width={600} className='h-[300px] w-full rounded-t-lg'/>
           </div>
           <div className='flex flex-col p-5'>
-              <h2 className='text-lg text-gray-900'>{project.title}</h2>
-              <p className='text-gray-600 font-medium'>{project.type}</p>
+              <h2 className='text-lg md:text-2xl font-black text-gray-900'>{project.title}</h2>
+              <p className='text-gray-600 md:text-lg font-medium'>{project.type}</p>
           </div>
         </div>     
     </div>

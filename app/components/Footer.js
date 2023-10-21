@@ -1,7 +1,7 @@
 
 import Logo from './Logo'
 import Link from 'next/link'
-import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare } from 'react-icons/ai'
+import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare, AiOutlineTrademark } from 'react-icons/ai'
 
 const Footer = () => {
   return (
@@ -84,12 +84,16 @@ const Footer = () => {
       </div>
       <div className='max-w-7xl w-full mx-auto border-t'>
         <div className='flex pt-2 px-1 lg:px-0'>
-          <div className='ml-0 mr-auto'>
-            <p className='text-gray-600'>reactivo | 2023</p>
+          <div className='ml-0 mr-auto flex text-gray-600 items-center'>
+            <span><AiOutlineTrademark/></span>
+            <p className='text-gray-600'>reactivo</p>
+            <p className='ml-1 text-sm'>2023</p>
           </div>
           <div className='mr-0 ml-auto flex gap-4'>
-            <p className='text-gray-600'>Términos y condiciones</p>
-            <p className='text-gray-600'>Aviso de privacidad</p>
+            <p className='hidden lg:block text-gray-600'>Términos y condiciones</p>
+            <p className='hidden lg:block text-gray-600'>Aviso de privacidad</p>
+            <p className='lg:hidden text-gray-600'>Condiciones</p>
+            <p className='lg:hidden text-gray-600'>Privacidad</p>
           </div>
         </div>
       </div>

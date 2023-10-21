@@ -5,7 +5,7 @@ import { BsFillCheckCircleFill } from 'react-icons/bs'
 
 const PersonalBanner = ({handleModal}) => {
   return (
-    <div id={'personal-banner'} className='max-w-7xl w-full mx-auto bg-gray-200 relative rounded-3xl p-5 lg:p-20 my-[50px]'>
+    <div id={'personal-banner'} className='max-w-7xl w-full mx-auto bg-white shadow-xl relative rounded-3xl p-5 lg:p-20 my-[50px]'>
         <div className='tag-left absolute top-7 left-0 lg:left-[-10px]  bg-gradient-to-bl from-blue-700 to-blue-800 p-2 shadow'>
             <h2 className='text-gray-50 text-lg'>Desde $14,999</h2>
         </div>

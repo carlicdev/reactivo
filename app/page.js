@@ -12,6 +12,7 @@ import QuoteForm from "./components/QuoteForm";
 import BlogSection from "./components/BlogSection";
 import PortfolioSection from "./components/PortfolioSection";
 import ServicesSection from "./components/ServicesSection";
+import ProjectsSections from "./components/ProjectsSections";
 
 
 export default function Home() {
@@ -30,7 +31,8 @@ export default function Home() {
       <ServicesOverview />
       <CTA handleModal={handleModal} text='Transformemos tu visión en realidad! Obtén una cotización personalizada hoy mismo.'/>
       <Testimonial />
-      <PortfolioSection />
+      <ProjectsSections/>
+      {/* <PortfolioSection /> */}
       {/* <BlogSection /> */}
       <FAQs />
       <ContactSection />

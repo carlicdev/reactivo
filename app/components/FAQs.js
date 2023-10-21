@@ -22,7 +22,7 @@ const FAQs = () => {
                                 <FaCircleChevronDown />
                             </div>
                         </div>
-                        <div className='max-h-0 overflow-hidden peer-checked:max-h-[200px] transition-all duration-1000'>
+                        <div className='max-h-0 overflow-hidden peer-checked:max-h-[400px] transition-all duration-1000'>
                             <div className='px-5 py-2 bg-gray-100'>
                                 <p className='text-gray-600 lg:text-lg text-justify'>{item.answer}</p>
                             </div>

@@ -6,17 +6,19 @@ const SoftwareBanner = ({ handleModal }) => {
   return (
     <div id={'software-banner'} className='w-full h-auto my-[50px]' >
         <div className=' h-full py-20'>
-            <div className='max-w-7xl w-full mx-auto bg-slate-950  rounded-3xl p-5 lg:p-20'>
-                <div className='flex flex-wrap'>
-                    <div className='relative flex w-full lg:w-1/2 mt-5 lg:mt-0 mb-5 lg:mb-0'>
-                        <div className='rounded-lg shadow z-10'>
-                            <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
-                                <div className='rounded-md overflow-hidden'>
-                                    <Image src={'/softwarePers2.jpg'} alt='img' width={600} height={400} />
+            <div className='max-w-7xl w-full mx-auto bg-slate-950  shadow-xl rounded-3xl p-5 lg:p-20'>
+                <div className='flex flex-wrap items-center'>
+                    <div className="w-full lg:w-1/2">
+                        <div className='relative flex  mt-5 lg:mt-0 mb-5 lg:mb-0'>
+                            <div className='rounded-lg shadow z-10'>
+                                <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
+                                    <div className='rounded-md overflow-hidden'>
+                                        <Image src={'/softwarePers2.jpg'} alt='img' width={600} height={400} />
+                                    </div>
                                 </div>
                             </div>
+                            <div className='absolute inset-0 bg-gradient-to-bl from-blue-700 to-blue-800 rounded-lg transform -rotate-3 origin-bottom-left'></div>
                         </div>
-                        <div className='absolute inset-0 bg-gradient-to-bl from-blue-700 to-blue-800 rounded-lg transform -rotate-3 origin-bottom-left'></div>
                     </div>
                     <div className='w-full lg:w-1/2 lg:pl-10'>
                         <h2 className="text-gray-50 font-bold text-3xl md:text-5xl mb-2">Software</h2>

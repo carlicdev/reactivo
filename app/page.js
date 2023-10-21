@@ -13,6 +13,7 @@ import BlogSection from "./components/BlogSection";
 import PortfolioSection from "./components/PortfolioSection";
 import ServicesSection from "./components/ServicesSection";
 import ProjectsSections from "./components/ProjectsSections";
+import ProcessMobile from "./components/ProcessMobile";
 
 
 export default function Home() {
@@ -27,7 +28,12 @@ export default function Home() {
       <Modal isOpen={isOpen} handleModal={handleModal} content={<QuoteForm  handleModal={handleModal}/>} />
       <Hero handleModal={handleModal}/>
       <ServicesSection />
-      <Process />
+      <div className="hidden lg:block">
+        <Process />
+      </div>
+      <div className="lg:hidden">
+        <ProcessMobile />
+      </div>
       <ServicesOverview />
       <CTA handleModal={handleModal} text='Transformemos tu visión en realidad! Obtén una cotización personalizada hoy mismo.'/>
       <Testimonial />

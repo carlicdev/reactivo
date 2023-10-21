@@ -1,7 +1,7 @@
 const processDetails = [
     {
         id: 1, 
-        title: 'Reunión Inicial y Requisitos', 
+        title: 'Reunión Inicial', 
         icon: 'joining',
         iconColor: 'text-orange-500',
         subtitle: 'Definimos funcionalidades, objetivos, plazos y presupuesto.',

@@ -30,7 +30,7 @@ const PackageCard = ({devPackage}) => {
                 </span>
             </div>
             <div className='flex flex-col p-4'>
-                <h2 className='font-bold text-gray-800 text-xl mb-5 text-center'>{devPackage.title}</h2>
+                <h2 className='font-black text-gray-800 text-xl mb-5 text-center'>{devPackage.title}</h2>
                 <p className='text-gray-600 text-justify mb-5'>{devPackage.text}</p>
             </div>
             <div className='flex w-full items-end justify-end'>

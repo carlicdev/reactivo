@@ -18,7 +18,7 @@ const webServices = [
     {
         id: 3,
         title: 'Business',
-        text: 'Aumenta las ventas de tu negocio y mejora la interacción con tus clientes con una página web profesional.',
+        text: 'Aumenta las ventas de tu negocio y mejora la interacción con tus clientes con una aplicación profesional.',
         icon: 'business',
         class: 'bg-yellow-500 text-yellow-100',
         link: 'business-banner'

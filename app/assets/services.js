@@ -10,7 +10,7 @@ const services = [
     {
         id: 2,
         title: 'Desarrollo de Software',
-        text: 'Creamos soluciones a la medida que automatizan procesos y mejoran la eficiencia de tu negocio.',
+        text: 'Soluciones que automatizan procesos y mejoran la eficiencia de tu negocio.',
         icon: 'software',
         class: 'bg-green-500 text-green-100',
         link: '/desarrollo-de-software'

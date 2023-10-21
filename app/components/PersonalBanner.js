@@ -9,7 +9,7 @@ const PersonalBanner = ({handleModal}) => {
         <div className='tag-left absolute top-7 left-0 lg:left-[-10px]  bg-gradient-to-bl from-blue-700 to-blue-800 p-2 shadow'>
             <h2 className='text-gray-50 text-lg'>Desde $14,999</h2>
         </div>
-        <div className='flex flex-wrap mt-24 lg:mt-0 '>
+        <div className='flex flex-wrap mt-24 lg:mt-0 items-center'>
             <div className='order-2 lg:order-1 w-full lg:w-1/2 lg:pr-10'>
                 <SubHeading text='Paquete'/>
                 <h2 className="text-gray-900 font-black text-4xl md:text-6xl lg:text-7xl mt-2 mb-5">Personal</h2>
@@ -53,15 +53,17 @@ const PersonalBanner = ({handleModal}) => {
                             </button>
                         </div>
             </div>
-            <div className='order-1 lg:order-2 relative flex w-full lg:w-1/2 mb-5 lg:mb-0'>
-                <div className='rounded-lg  z-10'>
-                    <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
-                        <div className='rounded-md overflow-hidden'>
-                            <Image src={'/influencer1.jpg'} alt='img' width={600} height={400} />
+            <div className='order-1 lg:order-2 w-full lg:w-1/2'>
+                <div className=' relative flex  mb-5 lg:mb-0'>
+                    <div className='rounded-lg  z-10'>
+                        <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
+                            <div className='rounded-md overflow-hidden'>
+                                <Image src={'/influencer1.jpg'} alt='img' width={600} height={400} />
+                            </div>
                         </div>
                     </div>
+                    <div className='absolute inset-0 bg-gradient-to-bl from-blue-700 to-blue-800 rounded-lg transform rotate-3 origin-bottom-right'></div>
                 </div>
-                <div className='absolute inset-0 bg-gradient-to-bl from-blue-700 to-blue-800 rounded-lg transform rotate-3 origin-bottom-right'></div>
             </div>
         </div>
     </div>

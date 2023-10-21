@@ -10,8 +10,9 @@ const EnterpriseBanner = ({ handleModal }) => {
             <div className='tag-right absolute top-7 right-0 lg:right-[-10px]  bg-gradient-to-bl from-blue-700 to-blue-800 p-2 shadow'>
                 <h2 className='text-gray-50 text-lg'>Desde $94,999</h2>
             </div>
-            <div className='flex flex-wrap'>
-                <div className='relative flex w-full lg:w-1/2 mb-5 mt-24 lg:mt-0'>
+            <div className='flex flex-wrap items-center'>
+                <div className="w-full lg:w-1/2">
+                    <div className='relative flex  mb-5 mt-24 lg:mt-0'>
                         <div className='rounded-lg shadow z-10'>
                             <div className='bg-white rounded-lg p-3 md:p-6 shadow-lg'>
                                 <div className='rounded-md overflow-hidden'>
@@ -21,6 +22,7 @@ const EnterpriseBanner = ({ handleModal }) => {
                         </div>
                         <div className='absolute inset-0 bg-gradient-to-bl from-blue-700 to-blue-800 rounded-lg transform -rotate-3 origin-bottom-left'></div>
                     </div>
+                </div>
                 <div className='w-full lg:w-1/2 lg:pl-10'>
                     <h2 className="text-gray-50 font-bold text-3xl md:text-5xl mb-2">Paquete</h2>
                     <h2 className="text-gray-100  font-black text-4xl md:text-6xl lg:text-7xl mb-5">Enterprise</h2>

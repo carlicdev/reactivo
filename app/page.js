@@ -11,6 +11,7 @@ import Testimonial from "./components/Testimonial";
 import QuoteForm from "./components/QuoteForm";
 import BlogSection from "./components/BlogSection";
 import PortfolioSection from "./components/PortfolioSection";
+import ServicesSection from "./components/ServicesSection";
 
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
     <main>
       <Modal isOpen={isOpen} handleModal={handleModal} content={<QuoteForm  handleModal={handleModal}/>} />
       <Hero handleModal={handleModal}/>
+      <ServicesSection />
       <Process />
       <ServicesOverview />
       <CTA handleModal={handleModal} text='Transformemos tu visión en realidad! Obtén una cotización personalizada hoy mismo.'/>

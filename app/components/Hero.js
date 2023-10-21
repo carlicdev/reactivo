@@ -13,7 +13,7 @@ const Hero = ({handleModal}) => {
           <div className="text-center my-5">
             <CotizacionButton handleModal={handleModal}/>
           </div>
-          <div className='flex flex-wrap justify-center mt-5'>
+          {/* <div className='flex flex-wrap justify-center mt-5'>
             <div className="w-full lg:w-1/3 p-2">
               <div className="border rounded-3xl p-5 px-10 shadow">
                 <h2 className="text-center text-gray-900 text-2xl font-bold mb-4">Desarrollo Web</h2>
@@ -46,7 +46,7 @@ const Hero = ({handleModal}) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>

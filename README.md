@@ -1,4 +1,6 @@
 TODO
+-modificar servicesSection[]
+-modificar portfolio a dos columnas grandes[]
 -arreglar imagen en correos[]
 -arreglar consultorias page[X]
 -About page

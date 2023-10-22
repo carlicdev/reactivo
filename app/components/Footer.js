@@ -1,11 +1,21 @@
+"use client"
 
+import { useState } from 'react'
 import Logo from './Logo'
 import Link from 'next/link'
 import { AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare, AiOutlineTrademark } from 'react-icons/ai'
+import Modal from './Modal'
+import Privacy from './Privacy'
 
 const Footer = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleModal = () => {
+    setIsOpen((prev) => !prev)
+  }
   return (
     <div className='w-full footer border-t'>
+      <Modal isOpen={isOpen} handleModal={handleModal} content={<Privacy />} />
       <div className='max-w-7xl w-full mx-auto'>
         <div className='flex flex-wrap py-10'>
           <div className='w-full md:w-1/2 lg:w-1/4 p-2  flex justify-center lg:justify-start mb-5 lg:mb-0'>
@@ -91,9 +101,9 @@ const Footer = () => {
           </div>
           <div className='mr-0 ml-auto flex gap-4'>
             <p className='hidden lg:block text-gray-600'>Términos y condiciones</p>
-            <p className='hidden lg:block text-gray-600'>Aviso de privacidad</p>
+            <p className='hidden lg:block text-gray-600 cursor-pointer' onClick={handleModal}>Aviso de privacidad</p>
             <p className='lg:hidden text-gray-600'>Condiciones</p>
-            <p className='lg:hidden text-gray-600'>Privacidad</p>
+            <p className='lg:hidden text-gray-600 cursor-pointer' onClick={handleModal}>Privacidad</p>
           </div>
         </div>
       </div>

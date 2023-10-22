@@ -7,7 +7,7 @@ const ContactSection = () => {
   return (
     <div id={'contact'} className='w-full h-auto' style={{ backgroundImage: 'url(./bg2.jpg)'}}>
         <div className='bg-black bg-opacity-50 h-full py-24'>
-            <div className='max-w-7xl mx-auto w-full bg-slate-950 rounded-3xl p-2 lg:p-10'>
+            <div className='max-w-7xl mx-auto w-full bg-slate-950 lg:rounded-3xl p-2 lg:p-10'>
                         <h2 className='text-gray-50 lg:text-center font-black text-4xl md:text-6xl  my-5 px-5'>¿Tienes alguna pregunta sobre nuestros servicios?</h2>
                 <div className='flex flex-wrap'>
                     <div className='w-full lg:w-1/2  flex justify-center'>

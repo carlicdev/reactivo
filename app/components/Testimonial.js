@@ -1,10 +1,9 @@
 import Image from "next/image"
-import Heading from "./Heading"
 import { FiMoreHorizontal } from "react-icons/fi"
 
 const Testimonial = () => {
   return (
-    <div className='max-w-7xl w-full mx-auto bg-slate-950  rounded-3xl lg:p-10 p-2 my-[100px]'>
+    <div className='max-w-7xl w-full mx-auto bg-slate-950  lg:rounded-3xl lg:p-10 p-2 my-[100px]'>
     <h2 className='text-gray-50 lg:text-center font-black text-4xl md:text-6xl  my-5 px-2 lg:px-0'>Construimos relaciones duraderas.</h2>
         <div className='flex justify-center gap-4'>
             <span className='my-5 tmx-auto text-5xl text-blue-700'><FiMoreHorizontal/></span>
@@ -42,7 +41,7 @@ const Testimonial = () => {
               </div>
             </div>
 
-            <div className="w-full lg:w-1/3 p-2 flex flex-col justify-center mb-5">
+            <div className="flex w-full lg:w-1/3 p-2  flex-col justify-center mb-5">
               <div className='max-w-sm bg-slate-800 rounded-lg shadow mx-auto'>
                     <div className='flex text-white gap-2 p-5 items-center rounded-b-3xl'>
                       <div className="rounded-full h-20 w-20 ml-0 mr-2 overflow-hidden">
@@ -77,7 +76,7 @@ const Testimonial = () => {
 
             </div>
 
-            <div className="w-full lg:w-1/3 p-2 flex flex-col justify-center mb-5">
+            <div className="hidden lg:flex w-full lg:w-1/3 p-2  flex-col justify-center mb-5">
                 <div className='max-w-sm bg-slate-800 rounded-lg shadow mx-auto'>
                     <div className='flex text-white gap-2 p-5 items-center rounded-b-3xl'>
                       <div className="rounded-full h-20 w-20 ml-0 mr-2 overflow-hidden">

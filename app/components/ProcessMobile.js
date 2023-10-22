@@ -26,7 +26,7 @@ const ProcessCard = ({ id, title, icon, iconColor, subtitle, handleAccordeon, in
                 <div className='flex gap-3 items-center'>
                     <span className={`${iconColor} text-4xl`}>{iconMappings[icon]()}</span>
                     <h2 className='text-gray-200 text-xl '>{title}</h2>
-                    <span className={`${iconColor} ${index === id ? 'rotate-180' : ''} text-2xl mr-0 ml-auto transition-all duration-1000`}><AiOutlineCaretDown/></span>
+                    <span className={`${iconColor} ${index === id ? '-rotate-180' : ''} text-2xl mr-0 ml-auto transition-all duration-1000`}><AiOutlineCaretDown/></span>
                 </div>
                 <div className={`${index === id ? 'max-h-[200px]' : 'max-h-0'} overflow-hidden transition-all duration-1000 bg-slate-900`}>
                     <div className='p-5'>

@@ -1,22 +1,12 @@
-"use client"
 
-import { useState } from 'react'
 import SectionHero from '../components/SectionHero'
 import SupportSection from '../components/SupportSection'
-import Modal from '../components/Modal'
-import TicketForm from '../components/TicketForm'
 import TicketStatus from '../components/TicketStatus'
 
 const SupportPage = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleModal = () => {
-    setIsOpen(prev => !prev)
-  }
 
   return (
     <div>
-      <Modal isOpen={isOpen} handleModal={handleModal} content={<TicketForm  handleModal={handleModal}/>} />
       <SectionHero title='Soporte.' subtitle='Estamos para servirte.' image={'./callCenter1.svg'} imgSize={'[350px]'}/>
       <div className='max-w-7xl mx-auto w-full mb-10'>
         <div className='w-full lg:w-1/3 px-5'>
@@ -25,7 +15,7 @@ const SupportPage = () => {
         </div>
       </div>
       <TicketStatus />
-      <SupportSection handleModal={handleModal} />
+      <SupportSection />
     </div>
   )
 }

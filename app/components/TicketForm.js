@@ -3,7 +3,7 @@
 import { useRef, useState } from 'react'
 import { AiOutlineReload } from 'react-icons/ai'
 
-const TicketForm = ({ handleModal }) => {
+const TicketForm = ({ handleModal, service }) => {
     const formRef = useRef()
     const [isValid, setIsValid] = useState(true)
     const [ticket, setTicket] = useState(null)
@@ -12,7 +12,7 @@ const TicketForm = ({ handleModal }) => {
     const [form, setForm] = useState({
         name: '',
         lastname: '',
-        service: 'Soporte Técnico',
+        service: service || 'Soporte Técnico',
         email: '',
         phone: '',
         message: ''

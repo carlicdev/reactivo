@@ -1,9 +1,25 @@
+"use client"
 
+import { useState } from 'react'
+import Modal from './Modal'
+import TicketForm from './TicketForm'
 
-const SupportSection = ({ handleModal }) => {
+const SupportSection = () => {
+    const [isOpen, setIsOpen] = useState(false)
+    const [service, setService] = useState('Soporte Técnico')
+
+    const handleClick = (arg) => {
+        setService(arg);
+        setIsOpen(!isOpen);
+    }
+
   return (
     <div className='max-w-7xl mx-auto w-full my-[50px]]'>
-        
+        <Modal 
+            isOpen={isOpen} 
+            handleModal={() => setIsOpen(!isOpen)} 
+            content={<TicketForm handleModal={() => setIsOpen(!isOpen)} service={service} />} 
+        />
         <div className='w-full flex flex-wrap my-[50px]'>
             <div className='w-full md:w-1/2 lg:w-1/3'>
                 <div className='p-5'>
@@ -13,7 +29,7 @@ const SupportSection = ({ handleModal }) => {
                     </p>
                     <div className='mt-5'>
                         <button 
-                            onClick={handleModal}
+                            onClick={() => handleClick('Soporte Técnico')}
                             className='border border-blue-700 text-blue-700 font-bold px-5 py-3 rounded-lg hover:bg-blue-700 hover:text-gray-50 '
                         >
                             Generar Ticket de Soporte
@@ -29,7 +45,7 @@ const SupportSection = ({ handleModal }) => {
                     </p>
                     <div className='mt-5'>
                         <button 
-                            onClick={handleModal}
+                            onClick={() => handleClick('Soporte Post-Lanzamiento')}
                             className='border border-blue-700 text-blue-700 font-bold px-5 py-3 rounded-lg hover:bg-blue-700 hover:text-gray-50'
                         >
                             Generar Ticket de Soporte
@@ -45,7 +61,7 @@ const SupportSection = ({ handleModal }) => {
                     </p>
                     <div className='mt-5'>
                         <button 
-                            onClick={handleModal}
+                            onClick={() => handleClick('Queja/Sugerencia')}
                             className='border border-blue-700 text-blue-700 font-bold px-5 py-3 rounded-lg hover:bg-blue-700 hover:text-gray-50'
                         >
                             Generar Ticket de Soporte

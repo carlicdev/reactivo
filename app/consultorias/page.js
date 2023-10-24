@@ -16,7 +16,7 @@ const ConsultoriasPage = () => {
 
   return (
     <div>
-      <Modal isOpen={isOpen} handleModal={handleModal} content={<QuoteForm handleModal={handleModal}/>} />
+      <Modal isOpen={isOpen} handleModal={handleModal} content={<QuoteForm handleModal={handleModal} service={'Consultoría'} />} />
       <SectionHero title='Consultorías.' subtitle={'Decisiones informadas y estratégicas.'} image={'/consultoria1.png'}/>
       <ConsultoriasSection handleModal={handleModal} />
       <ContactSection />

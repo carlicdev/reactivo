@@ -15,7 +15,7 @@ const OtherServicesPage = () => {
 
   return (
     <div>
-      <Modal isOpen={isOpen} handleModal={handleModal} content={<QuoteForm handleModal={handleModal}/>}/>
+      <Modal isOpen={isOpen} handleModal={handleModal} content={<QuoteForm handleModal={handleModal} service={'Mantenimiento'} />}/>
         <SectionHero title='Mantenimiento y Actualización.' subtitle='Siempre a la vanguardia.' image={'/mantenimiento1.svg'}/>
       <OtherServicesSection handleModal={handleModal} />
     </div>

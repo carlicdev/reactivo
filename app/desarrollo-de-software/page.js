@@ -17,7 +17,7 @@ const SoftwarePage = () => {
 
   return (
     <div>
-      <Modal isOpen={isOpen} handleModal={handleModal} content={<QuoteForm handleModal={handleModal} />}/>
+      <Modal isOpen={isOpen} handleModal={handleModal} content={<QuoteForm handleModal={handleModal} service={'Desarrollo de Software'} />}/>
       <SectionHero title='Desarrollo de Software.' subtitle={'A la medida. Escalable. Fácil de usar.'} image={'/software2.png'}/>
       <SoftwareBanner  handleModal={handleModal}/>
       <SoftwareForWho />

@@ -4,7 +4,7 @@ import { useRef, useState } from 'react'
 import { AiOutlineReload } from 'react-icons/ai'
 import Logo from './Logo'
 
-const QuoteForm = ({handleModal}) => {
+const QuoteForm = ({handleModal, service}) => {
     const formRef = useRef()
     const [isValid, setIsValid] = useState(true)
     const [sending, setSending] = useState(false)
@@ -13,7 +13,7 @@ const QuoteForm = ({handleModal}) => {
     const [form, setForm] = useState({
         name: '',
         lastname: '',
-        service: 'Desarrollo Web',
+        service: service || 'Desarrollo Web',
         email: '',
         phone: '',
         message: ''

@@ -15,13 +15,13 @@ const ServicesSectionMobile = () => {
     }
 
   return (
-    <div className='w-full bg-white shadow-lg py-2'>
+    <div className='w-full bg-white shadow-lg py-5'>
         <div className='flex flex-wrap'>
             {
                 mobileServices.map((item, index) => (
-                    <div className='w-1/3 p-2 flex flex-col gap-2 items-center justify-center' key={index}>
+                    <div className='w-1/3 p-3 flex flex-col gap-2 items-center justify-center' key={index}>
                         <Link href={item.link} >
-                            <div className={`${item.class} rounded-lg shadow-lg p-4 flex items-center justify-center text-3xl hover:scale-105`}>
+                            <div className={`${item.class} rounded-lg shadow-lg p-4 flex items-center justify-center text-4xl hover:scale-105`}>
                                 <span>
                                     {iconMapping[item.icon]()}
                                 </span>

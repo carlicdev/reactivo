@@ -6,7 +6,7 @@ import { BsFillCheckCircleFill } from 'react-icons/bs'
 const PersonalBanner = ({handleModal}) => {
   return (
     <div id={'personal-banner'} className='max-w-7xl w-full mx-auto bg-white shadow-xl relative rounded-3xl p-5 lg:p-20 my-[50px]'>
-        <div className='tag-left absolute top-7 left-0 lg:left-[-10px]  bg-gradient-to-bl from-blue-700 to-blue-800 p-2 shadow'>
+        <div className='tag-left absolute top-7 left-0 lg:left-[-10px]  bg-gradient-to-bl from-red-400 to-red-500 p-2 shadow'>
             <h2 className='text-gray-50 text-lg'>Desde $14,999</h2>
         </div>
         <div className='flex flex-wrap mt-24 lg:mt-0 items-center'>
@@ -47,7 +47,7 @@ const PersonalBanner = ({handleModal}) => {
                         <div className='mt-10'>
                             <button 
                                 onClick={handleModal}
-                                className='bg-blue-700 hover:scale-105 transition-all duration-300font-medium text-2xl px-7 py-4 rounded-lg text-white shadow-lg '
+                                className='bg-red-400 hover:scale-105 transition-all duration-300font-medium text-2xl px-7 py-4 rounded-lg text-white shadow-lg '
                             >
                                 Solicitar Cotización
                             </button>

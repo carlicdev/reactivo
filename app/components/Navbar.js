@@ -76,14 +76,14 @@ const Navbar = () => {
           <div className='mr-0 ml-auto'>
             <button 
               onClick={handleModal}
-              className='hidden lg:block bg-blue-700 hover:scale-105 transition-all duration-300 px-6 py-3 rounded-lg text-white font-medium text-xl shadow-lg'
+              className='hidden lg:block bg-red-400 hover:scale-105 transition-all duration-300 px-6 py-3 rounded-lg text-white font-medium text-xl shadow-lg'
             >
               Solicitar Cotización
             </button>
 
             <div 
               onClick={() => setIsOpen(!isOpen)}
-              className='lg:hidden lg:block text-blue-700 hover:scale-110 transition-all duration-300 text-3xl cursor-pointer '>
+              className='lg:hidden lg:block text-red-400 hover:scale-110 transition-all duration-300 text-3xl cursor-pointer '>
               {
                 !isOpen ? 
                 <FiMenu /> : null
@@ -99,7 +99,7 @@ const Navbar = () => {
       <div className={`animated-box ${isOpen ? 'open' : 'closed'} lg:hidden bg-slate-100 absolute top-0 w-full z-20`}>
                     <div className='relative w-full'>
                         <button 
-                            className='absolute top-4 right-4 text-blue-700 text-4xl'
+                            className='absolute top-4 right-4 text-red-400 text-4xl'
                             onClick={() => setIsOpen(!isOpen)}    
                         >
                         <AiOutlineCloseCircle />

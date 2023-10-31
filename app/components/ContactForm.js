@@ -164,7 +164,7 @@ const ContactForm = () => {
         <button 
           type='submit'
           disabled={!isValid}
-          className='flex gap-2 items-center hover:scale-105 trasition-all duration-300 bg-blue-700 px-6 py-3 text-lg font-bold rounded text-slate-50 shadow-lg'>
+          className='shadow-lg flex gap-2 items-center hover:scale-105 trasition-all duration-300 bg-red-400 px-8 py-3 text-lg font-bold rounded text-slate-50 shadow-lg'>
           {buttonText}
         </button>
         <p className='text-red-400'>{serverError}</p>

@@ -59,7 +59,7 @@ h2 {
   height: 12px; /* Altura del triángulo */
   border-left: 6px solid transparent; /* Borde izquierdo transparente */
   border-right: 6px solid transparent; /* Borde derecho transparente */
-  border-bottom: 6px solid #252e63; /* Borde inferior para formar el triángulo */
+  border-bottom: 6px solid #7f1d1d; /* Borde inferior para formar el triángulo */
 }
 
 .tag-left::after {
@@ -72,5 +72,5 @@ h2 {
   height: 12px; /* Altura del triángulo */
   border-left: 6px solid transparent; /* Borde izquierdo transparente */
   border-right: 6px solid transparent; /* Borde derecho transparente */
-  border-bottom: 6px solid #252e63; /* Borde inferior para formar el triángulo */
+  border-bottom: 6px solid #7f1d1d; /* Borde inferior para formar el triángulo */
 }

@@ -177,7 +177,7 @@ const QuoteForm = ({handleModal, service}) => {
             <button 
                 disabled={!isValid}
                 type='submit'
-                className='border border-blue-700 text-blue-700 font-bold px-5 py-3 rounded-lg hover:bg-blue-700 hover:text-gray-50'
+                className='bg-red-400 hover:scale-105 transition-all duration-300 px-7 py-4 rounded-lg text-white font-medium text-2xl shadow-lg'
             >
                 {buttonText}
             </button>

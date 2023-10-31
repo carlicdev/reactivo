@@ -7,7 +7,7 @@ const EnterpriseBanner = ({ handleModal }) => {
     <div id={'enterprise-banner'} className='w-full h-auto my-[150px]' style={{ backgroundImage: 'url(./bg2.jpg)'}}>
     <div className='bg-black bg-opacity-50 h-full py-20'>
         <div className='max-w-7xl w-full mx-auto relative bg-slate-950 rounded-3xl p-5 lg:p-20'>
-            <div className='tag-right absolute top-7 right-0 lg:right-[-10px]  bg-gradient-to-bl from-blue-700 to-blue-800 p-2 shadow'>
+            <div className='tag-right absolute top-7 right-0 lg:right-[-10px]  bg-gradient-to-bl from-red-400 to-red-500 p-2 shadow'>
                 <h2 className='text-gray-50 text-lg'>Desde $94,999</h2>
             </div>
             <div className='flex flex-wrap items-center'>
@@ -64,7 +64,7 @@ const EnterpriseBanner = ({ handleModal }) => {
                     <div className='mt-10'>
                         <button 
                             onClick={handleModal}
-                            className='bg-blue-700 hover:scale-105 transition-all duration-300 font-medium text-2xl px-7 py-4 rounded-lg text-white '
+                            className='bg-red-400 hover:scale-105 transition-all duration-300 font-medium text-2xl px-7 py-4 rounded-lg text-white shadow-lg'
                         >
                             Solicitar Cotización
                         </button>

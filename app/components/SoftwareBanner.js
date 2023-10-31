@@ -57,7 +57,7 @@ const SoftwareBanner = ({ handleModal }) => {
                         <div className='mt-10'>
                             <button 
                                 onClick={handleModal}
-                                className='bg-blue-700 font-medium text-2xl px-7 py-4 rounded-lg text-white '
+                                className='bg-red-400 font-medium text-2xl px-7 py-4 rounded-lg text-white '
                             >
                                 Solicitar Cotización
                             </button>

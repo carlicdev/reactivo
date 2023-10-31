@@ -65,7 +65,7 @@ const TicketStatus = () => {
                     <label className='flex '>
                         <button
                             type='submit'
-                            className='peer-focus:border-2 border border-blue-700 text-blue-700 font-bold px-5 py-3 rounded-l-lg hover:bg-blue-700 hover:text-gray-50 w-[220px]'
+                            className='peer-focus:border-2 border border-red-400 text-white font-bold px-5 py-3 rounded-l-lg bg-red-400 w-[220px]'
                         >
                             {buttonText}
                         </button>
@@ -74,7 +74,7 @@ const TicketStatus = () => {
                             name='ticket'
                             value={form.ticket}
                             onChange={handleChange}
-                            className='peer rounded-r-lg w-3/4 border outline-none focus:outline-blue-700 px-1'
+                            className='peer rounded-r-lg w-3/4 border outline-none px-1'
                             placeholder='Ticket Id'
                         />
                     </label>

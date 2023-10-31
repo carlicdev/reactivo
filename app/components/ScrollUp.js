@@ -32,7 +32,7 @@ const ScrollUp = () => {
         top: 0,
         behavior: 'smooth'
     })}
-    className={`${buttonDisplay} bottom-0 right-0 p-5 text-5xl text-blue-700 cursor-pointer`}
+    className={`${buttonDisplay} bottom-0 right-0 p-5 text-5xl text-red-400 cursor-pointer`}
     >
         <BsFillArrowUpSquareFill className='shadow-lg' />
     </div>

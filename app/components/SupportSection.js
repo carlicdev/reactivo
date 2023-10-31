@@ -30,7 +30,7 @@ const SupportSection = () => {
                     <div className='mt-5'>
                         <button 
                             onClick={() => handleClick('Soporte Técnico')}
-                            className='border border-blue-700 text-blue-700 font-bold px-5 py-3 rounded-lg hover:bg-blue-700 hover:text-gray-50 '
+                            className='shadow-lg bg-red-400 hover:scale-105 transition-all duration-300 font-medium text-2xl px-7 py-4 rounded-lg text-white '
                         >
                             Generar Ticket de Soporte
                         </button>
@@ -46,7 +46,7 @@ const SupportSection = () => {
                     <div className='mt-5'>
                         <button 
                             onClick={() => handleClick('Soporte Post-Lanzamiento')}
-                            className='border border-blue-700 text-blue-700 font-bold px-5 py-3 rounded-lg hover:bg-blue-700 hover:text-gray-50'
+                            className='shadow-lg bg-red-400 hover:scale-105 transition-all duration-300 font-medium text-2xl px-7 py-4 rounded-lg text-white '
                         >
                             Generar Ticket de Soporte
                         </button>
@@ -62,7 +62,7 @@ const SupportSection = () => {
                     <div className='mt-5'>
                         <button 
                             onClick={() => handleClick('Queja/Sugerencia')}
-                            className='border border-blue-700 text-blue-700 font-bold px-5 py-3 rounded-lg hover:bg-blue-700 hover:text-gray-50'
+                            className='shadow-lg bg-red-400 hover:scale-105 transition-all duration-300 font-medium text-2xl px-7 py-4 rounded-lg text-white '
                         >
                             Generar Ticket de Soporte
                         </button>
